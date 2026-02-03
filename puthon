@@ -1,0 +1,14 @@
+
+### 👨‍💻 detect.py (demo CV pipeline)
+```python
+import cv2
+
+img = cv2.imread("sample.jpg")
+
+if img is None:
+    print("Image not found. Add sample.jpg in project folder.")
+else:
+    h, w, _ = img.shape
+    print(f"Loaded image with shape: {w}x{h}")
+    print("Detected object: person (demo output)")
+
